@@ -7,3 +7,10 @@
 * It is also very important in maximum flow: Edmonds-Karp algorithm uses BFS for finding augmenting paths
 * In garbage collecting
 * Serialization - deserialization of a tree like structures
+
+## Depth First Search
+### Usage:
+* Topological ordering
+* Detecting cycles
+* Generating mazes or finding way out of a maze
+* Serialization - deserialization of a tree like structures
