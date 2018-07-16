@@ -14,7 +14,11 @@ public class DFS{
     public void dfs(List<Vertex> vertexList){
         for(Vertex vertex : vertexList){
             if(!vertex.isVisited()){
+                System.out.println("With stack:");
                 dfsWithStack(vertex);
+                System.out.println();
+                System.out.println("With recursion:");
+                dfsWithRecursion(vertex);
             }
         }
     }
@@ -25,7 +29,7 @@ public class DFS{
 
         while(!this.stack.isEmpty()){
             Vertex currentVertex = this.stack.pop();
-            System.out.print(currentVertex + "  ");
+            System.out.print(currentVertex + "    ");
 
             for(Vertex vertex: currentVertex.getNeighborList()){
                 if(!vertex.isVisited()){
@@ -33,6 +37,15 @@ public class DFS{
                     this.stack.push(vertex);
                 }
             }
+        }
+    }
+
+    private void dfsWithRecursion(Vertex root){
+        System.out.print(root + "    ");
+        root.setVisited(true);
+
+        for(Vertex vertex : root.getNeighborList()){
+            dfsWithRecursion(vertex);
         }
     }
 }
