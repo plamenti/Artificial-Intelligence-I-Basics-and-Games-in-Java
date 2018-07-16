@@ -13,4 +13,3 @@
 * Topological ordering
 * Detecting cycles
 * Generating mazes or finding way out of a maze
-* Serialization - deserialization of a tree like structures
