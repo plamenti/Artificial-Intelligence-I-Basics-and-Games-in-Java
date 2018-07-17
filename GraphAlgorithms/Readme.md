@@ -13,3 +13,11 @@
 * Topological ordering
 * Detecting cycles
 * Generating mazes or finding way out of a maze
+
+## Iterative deepening Depth First Search
+### Usage:
+* Very important in AI and robotics
+* It visits the nodes in the search tree in the same order as DFS, but the cumulative order in which the nodes are first visited is effectively BFS
+* Keep going deeper and deeper in the given tree with DFS on each iteration
+* The time complexity of IDDFS in well-balanced trees works out to be the same as DFS
+* **Disadvantage** - we keep recomputing the same problem over and over again. But this is not so dramatic - the complexity is O(C*N) if C is a constant!
