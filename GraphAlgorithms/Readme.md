@@ -21,3 +21,10 @@
 * Keep going deeper and deeper in the given tree with DFS on each iteration
 * The time complexity of IDDFS in well-balanced trees works out to be the same as DFS
 * **Disadvantage** - we keep recomputing the same problem over and over again. But this is not so dramatic - the complexity is O(C*N) if C is a constant!
+
+## A* search algorithm 
+### Usage:
+* Very important in artificial intelligence
+* Widely used in path finding and graph traversal where there are obstacles
+* Can solve path finding problems in games (it is used in Warcraft)
+* However, in practical travel-routing systems, it is generally outperformed by algorithms which can pre-process the graph to attain better performance ( Dijkstra or BFS )
